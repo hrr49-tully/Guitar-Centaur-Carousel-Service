@@ -15,7 +15,7 @@
 
 ## Usage
 
-> This is a standalone version of a photo carousel component from Guitar Center's UI.
+> This is a standalone version of the title card plus photo viewer/carousel component from Guitar Center's UI.
 
 ## Requirements
 
