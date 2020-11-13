@@ -6,6 +6,12 @@
 
   - https://github.com/hrr49-tully
   - https://github.com/dwwr
+  - https://github.com/hrr49-tully/Guitar-Centaur-RelatedPurchases-Proxy
+  - https://github.com/hrr49-tully/Guitar-Centaur-Reviews-Service
+  - https://github.com/hrr49-tully/Guitar-Centaur-Reviews-Proxy
+  - https://github.com/hrr49-tully/Guitar-Centaur-Add-to-Cart
+  - https://github.com/hrr49-tully/Guitar-Centaur-Add-to-Cart-proxy
+
 
 ## Table of Contents
 

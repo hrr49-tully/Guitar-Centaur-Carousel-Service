@@ -6,8 +6,8 @@ USE centaur;
 
 CREATE TABLE items (
   id INT PRIMARY KEY UNIQUE AUTO_INCREMENT,
-  itemNum INT UNIQUE,
-  POSNum INT UNIQUE,
+  itemNum INT,
+  POSNum INT,
   avgScore INT,
   reviewCount INT,
   title VARCHAR(255)
