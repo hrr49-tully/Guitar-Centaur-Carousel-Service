@@ -7,9 +7,8 @@ let randomItems = [];
 let randomImages = [];
 
 //populates arrays with random objs
-for (let i = 0; i < 100; i++) {
+for (let i = 0; i <= 100; i++) {
   let itemObj = {
-    id: i,
     itemNum: faker.random.number(),
     POSNum: faker.random.number(),
     avgScore: faker.random.number(5),
@@ -19,7 +18,6 @@ for (let i = 0; i < 100; i++) {
   }
   randomItems.push(itemObj);
   let imageObj = {
-    id: i,
     itemID: itemObj.itemNum,
     photoDescription: faker.random.word(),
     srcURL: faker.image.imageUrl()
@@ -37,7 +35,7 @@ for (let i = 0; i < randomItems.length -1; i++) {
   let reviewCount = current.reviewCount;
   let title = current.title;
 
-  let query = `INSERT INTO items (itemNum, POSNum, avgScore, reviewCount, title) VALUES ('${itemNum}', '${POSNum}', '${avgScore}', '${reviewCount}', '${title}')`
+  let query = `INSERT INTO items (itemNum, POSNum, avgScore, reviewCount, title) VALUES (${db.escape(itemNum)}, ${db.escape(POSNum)}, ${db.escape(avgScore)}, ${db.escape(reviewCount)}, ${db.escape(title)})`
   // console.log(query);
   db.query(query, (err, res) => {
     if (err) {
@@ -50,13 +48,13 @@ for (let i = 0; i < randomItems.length -1; i++) {
 }
 
 
-for (let i = 0; i < randomImages.length; i++) {
+for (let i = 0; i < randomImages.length -1; i++) {
   let current = randomImages[i];
   console.log(current)
-  let itemID = current.id;
+  let itemID = current.itemID;
   let photoDescription = current.photoDescription;
   let srcURL = current.srcURL;
-  let query = `INSERT INTO photos (photoDescription, srcURL) VALUES ('${photoDescription}', '${srcURL}')`
+  let query = `INSERT INTO photos ( itemID, photoDescription, srcURL) VALUES ( (SELECT id from items WHERE id = ${db.escape(i + 1)}), ${db.escape(photoDescription)}, ${db.escape(srcURL)})`
 
   // console.log(query);
   db.query(query, (err, res) => {
