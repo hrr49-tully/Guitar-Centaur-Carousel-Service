@@ -15,6 +15,7 @@ for (let i = 0; i < 100; i++) {
     avgScore: faker.random.number(5),
     reviewCount: faker.random.number(100),
     title: faker.random.word()
+    //send help
   }
   randomItems.push(itemObj);
   let imageObj = {
