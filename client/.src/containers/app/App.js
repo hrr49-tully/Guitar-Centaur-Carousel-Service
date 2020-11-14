@@ -12,7 +12,8 @@ class App extends React.Component {
 
   render () {
     return (
-      <AppStyles>Welcome to Guitar Centaur</AppStyles>
+      <AppStyles.app>Welcome to Guitar Centaur</AppStyles.app>
+
     );
   }
 }
