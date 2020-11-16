@@ -12,12 +12,42 @@ module.exports = {
     });
 
   },
+  formatItemData: (items) => {
+    return items.map((item) => {
+      return {
+        id: item.id,
+        itemNum: item.itemNum,
+        POSNum: item.POSNum,
+        avgScore: item.avgScore,
+        reviewCount: item.reviewCount,
+        title: item.title
+      }
+    })
+  },
   getAllPhotos: () => {
     return new Promise ((resolve, reject) => {
-      let query = `SELECT * FROM items`;
+      let query = `SELECT * FROM photos`;
       db.query(query, (err, results) => {
         err ? reject(err) : resolve(results);
       });
     });
+  },
+
+  getPhotosByItemID: (itemID) => {
+    return new Promise ((resolve, reject) => {
+      let query = `SELECT * FROM photos WHERE itemID = ${itemID}`;
+      db.query(query, (err, results) => {
+        err ? reject(err) : resolve(results);
+      });
+    })
+  },
+  formatPhotoData: (photos) => {
+    return photos.map((photo) => {
+      return {
+        id: photo.id,
+        itemID: photo.itemID,
+        srcURL: photo.srcURL
+      }
+    })
   }
 };
