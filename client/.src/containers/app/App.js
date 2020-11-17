@@ -2,6 +2,7 @@ import React from 'react';
 import reactDOM from 'react-dom';
 import AppStyles from './AppStyles';
 import axios from 'axios';
+import Title from '../title/Title.js';
 
 class App extends React.Component {
   constructor(props) {
@@ -10,7 +11,8 @@ class App extends React.Component {
       item: {},
       photos: []
     }
-    this.getItem = this.getItem.bind(this);
+    this.getItem = this.getItem.bind(this)
+    this.getPhotosByItemID = this.getPhotosByItemID.bind(this);
   }
 
   getItem () {
@@ -48,16 +50,20 @@ class App extends React.Component {
 
   componentDidMount () {
     this.getItem();
-    console.log(this.state);
   }
 
 
   render () {
-    console.log(this.state);
-
+    console.log('toplevel state: ',this.state);
     return (
+      <div>
+      <div>
       <AppStyles.app>Welcome to Guitar Centaur</AppStyles.app>
-
+      </div>
+      <div>
+      <Title item={this.state.item} />
+      </div>
+      </div>
     );
   }
 }
