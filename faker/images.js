@@ -1,0 +1,29 @@
+module.exports = {
+  photos: [
+    'https://gc-photocarousel.s3-us-west-2.amazonaws.com/gitty1.jpg',
+    'https://gc-photocarousel.s3-us-west-2.amazonaws.com/gitty2.jpg',
+    'https://gc-photocarousel.s3-us-west-2.amazonaws.com/gitty3.jpg',
+    'https://gc-photocarousel.s3-us-west-2.amazonaws.com/gitty4.jpg',
+    'https://gc-photocarousel.s3-us-west-2.amazonaws.com/gitty5.jpg',
+    'https://gc-photocarousel.s3-us-west-2.amazonaws.com/gitty6.jpg',
+    'https://gc-photocarousel.s3-us-west-2.amazonaws.com/gitty7.jpg',
+    'https://gc-photocarousel.s3-us-west-2.amazonaws.com/gitty8.jpg',
+    'https://gc-photocarousel.s3-us-west-2.amazonaws.com/gitty9.jpg',
+    'https://gc-photocarousel.s3-us-west-2.amazonaws.com/gitty10.jpg',
+    'https://gc-photocarousel.s3-us-west-2.amazonaws.com/gitty11.jpg',
+    'https://gc-photocarousel.s3-us-west-2.amazonaws.com/gitty12.jpg',
+    'https://gc-photocarousel.s3-us-west-2.amazonaws.com/gitty13.jpg',
+    'https://gc-photocarousel.s3-us-west-2.amazonaws.com/gitty14.jpg',
+    'https://gc-photocarousel.s3-us-west-2.amazonaws.com/gitty15.jpg',
+    'https://gc-photocarousel.s3-us-west-2.amazonaws.com/gitty16.jpg',
+    'https://gc-photocarousel.s3-us-west-2.amazonaws.com/gitty17.jpg',
+    'https://gc-photocarousel.s3-us-west-2.amazonaws.com/gitty18.jpg',
+    'https://gc-photocarousel.s3-us-west-2.amazonaws.com/gitty19.jpg',
+    'https://gc-photocarousel.s3-us-west-2.amazonaws.com/gitty20.jpg',
+    'https://gc-photocarousel.s3-us-west-2.amazonaws.com/gitty21.jpg',
+    'https://gc-photocarousel.s3-us-west-2.amazonaws.com/gitty22.jpg',
+    'https://gc-photocarousel.s3-us-west-2.amazonaws.com/gitty23.jpg',
+    'https://gc-photocarousel.s3-us-west-2.amazonaws.com/gitty24.jpg',
+    'https://gc-photocarousel.s3-us-west-2.amazonaws.com/gitty25.jpg'
+  ]
+}
