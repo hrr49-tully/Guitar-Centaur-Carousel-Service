@@ -36,7 +36,8 @@ const TitleStyles = {
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
-    font-family: montserratregular,Arial,Helvetica,sans-serif;
+    font-family: 'Montserrat',Arial,Helvetica,sans-serif;
+    font-weight: lighter;
     font-size: 12px;
     line-height: 1.5;
     color: #333;
@@ -47,7 +48,7 @@ const TitleStyles = {
     flex-direction: row;
     align-items: center;
     .starWrapper{
-      width: 16%
+      margin-right: 10px;
     }
     .images{
       height: 14px;
