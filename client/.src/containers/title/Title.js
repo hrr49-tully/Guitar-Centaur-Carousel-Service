@@ -4,7 +4,6 @@ import TitleStyles from './TitleStyles.js';
 import {star, noStar} from '../../../assets/images';
 
 const Title = (props) => {
-  console.log(props);
   let stars = [];
   for (let i = 0; i < 5; i++) {
     if (i < props.item.avgScore) {
@@ -13,7 +12,7 @@ const Title = (props) => {
       stars.push(noStar);
     }
   }
-  console.log(stars);
+
   return (
     <div>
       <div>
@@ -30,8 +29,8 @@ const Title = (props) => {
     </TitleStyles.skuDetails>
     <TitleStyles.ratingsDetails>
       <div className='starWrapper'>
-        {stars.map((star) => {
-          return <img src={star} className='images'/>
+        {stars.map((star, index) => {
+          return <img src={star} className='images' key={index}/>
         })}
       </div>
       <TitleStyles.skuDetails>

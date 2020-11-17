@@ -3,6 +3,7 @@ import reactDOM from 'react-dom';
 import AppStyles from './AppStyles';
 import axios from 'axios';
 import Title from '../title/Title.js';
+import Viewer from '../viewer/Viewer.js';
 
 class App extends React.Component {
   constructor(props) {
@@ -62,6 +63,9 @@ class App extends React.Component {
       </div>
       <div>
       <Title item={this.state.item} />
+      </div>
+      <div>
+        <Viewer photos={this.state.photos} />
       </div>
       </div>
     );

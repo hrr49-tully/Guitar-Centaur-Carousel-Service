@@ -10,6 +10,7 @@ const TitleStyles = {
     font-size: 16px;
     font-weight: bold;
     padding: 2px 6px;
+    margin-left: 10px;
   `,
   title: styled.h1`
     color: #000;
@@ -23,6 +24,7 @@ const TitleStyles = {
     height: auto;
     min-height: 100%;
     min-width: 976px;
+    margin-left: 10px;
   `,
   skuDetails: styled.span`
     white-space: nowrap;
@@ -42,10 +44,12 @@ const TitleStyles = {
     line-height: 1.5;
     color: #333;
     margin-right: 10px;
+    margin-left: 10px;
   `,
   ratingsDetails: styled.span`
     display: flex;
     flex-direction: row;
+    flex-shrink: 0;
     align-items: center;
     .starWrapper{
       margin-right: 10px;
@@ -54,6 +58,8 @@ const TitleStyles = {
       height: 14px;
       width: 14px;
       margin: 0 1px;
+      flex-basis: 14px;
+      flex-shrink: 0;
     }
   `
 
