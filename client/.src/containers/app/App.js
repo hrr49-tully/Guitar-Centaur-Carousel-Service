@@ -55,7 +55,7 @@ class App extends React.Component {
 
 
   render () {
-    console.log('toplevel state: ',this.state);
+    // console.log('toplevel state: ',this.state);
     return (
       <div>
       <div>

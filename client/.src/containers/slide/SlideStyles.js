@@ -3,7 +3,6 @@ import styled from 'styled-components';
 const SlideStyles = {
   content: styled.div`
     transform: translateX(-${props => props.translate}px);
-    transition: transform ease-out ${props => props.transition}s;
     height: 50%;
     width: 50%
     display: flex;
@@ -15,6 +14,9 @@ const SlideStyles = {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    transition: 0.5s all ease-in-out;
+    transform-origin: 50% 50%;
+ }
   `
 }
 

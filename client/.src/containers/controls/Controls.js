@@ -10,13 +10,13 @@ const Controls = (props) => {
     <div>
       <ControlsStyles.controls>
         <ControlsStyles.plus>
-          <img src={plus} height='25px' width='25px'/>
+          <img src={plus} height='25px' width='25px' onClick={props.zoomIn}/>
         </ControlsStyles.plus>
         <ControlsStyles.minus>
-          <img src={minus} height='25px' width='25px'/>
+          <img src={minus} height='25px' width='25px' onClick={props.zoomOut}/>
         </ControlsStyles.minus>
         <ControlsStyles.reset>
-          <img src={reset} height='25px' width='25px'/>
+          <img src={reset} height='25px' width='25px' onClick={props.resetZoom}/>
         </ControlsStyles.reset>
         <ControlsStyles.expand>
           <img src={expand} height='22px' width='22px'/>

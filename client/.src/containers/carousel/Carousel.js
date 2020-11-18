@@ -3,7 +3,7 @@ import {back, next} from '../../../assets/images';
 import CarouselStyles from './CarouselStyles.js';
 
 const Carousel = (props) => {
-  console.log('carousel props:', props)
+  // console.log('carousel props:', props)
 
   const getWidth = () => 70;
 
@@ -52,8 +52,8 @@ const Carousel = (props) => {
   }
 
 
-  console.log('carousel State: ',state);
-  console.log('carousel props: ',props);
+  // console.log('carousel State: ',state);
+  // console.log('carousel props: ',props);
   return (
     <div>
       <CarouselStyles.container>

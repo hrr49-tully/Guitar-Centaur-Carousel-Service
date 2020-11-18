@@ -12,14 +12,16 @@ const Viewer = (props) => {
   const getWidth = () => 477.9 / 2;
 
   const [state, setState] = useState({
+    imgHeight: 519,
+    imgWidth: 477.9,
     currentIndex: 0,
     translate: 0,
-    transition: 0.45
+    transition: 0.45,
+    clickCount: 0
   });
 
-  const { translate, transition, currentIndex } = state;
+  const { translate, transition, currentIndex, imgHeight, imgWidth, clickCount } = state;
 
-  //functions to handle clicks go here
   const nextSlide = () => {
     if (currentIndex === props.photos.length - 1) {
       return setState({
@@ -31,8 +33,7 @@ const Viewer = (props) => {
 
     setState({
       ...state,
-      currentIndex: currentIndex + 1,
-      translate: (currentIndex + 1) * getWidth()
+      currentIndex: currentIndex + 1
     })
   }
 
@@ -47,8 +48,7 @@ const Viewer = (props) => {
 
     setState({
       ...state,
-      currentIndex: currentIndex - 1,
-      translate: (currentIndex - 1) * getWidth()
+      currentIndex: currentIndex - 1
     })
   }
 
@@ -60,25 +60,70 @@ const Viewer = (props) => {
     })
   }
 
+  const zoomIn = () => {
+    console.log('zoom in clicked!')
+    setState({
+      ...state,
+      clickCount: clickCount + 1,
+      imgHeight: imgHeight + 100,
+      imgWidth: imgWidth + 100
+    })
+  }
+
+  const zoomOut = () => {
+    console.log('zoom out clicked!')
+    if (imgHeight !== 519) {
+      setState({
+        ...state,
+        clickCount: clickCount - 1,
+        imgHeight: imgHeight - 100,
+        imgWidth: imgWidth - 100
+      })
+    }
+
+  }
+
+  const resetZoom = () => {
+    console.log('zoom reset clicked!')
+    setState({
+      ...state,
+      clickCount: 0,
+      imgHeight: 519,
+      imgWidth: 477.9
+    })
+  }
+
 
   console.log('Viewer Props:', props);
-  console.log(state);
-  console.log(currentIndex);
+  console.log('Viewer state:',state);
   return (
   <ViewerStyles.viewer>
     <ViewerStyles.content
       translate={translate}
       transition={transition}
-      width={getWidth()}>
+      width={getWidth()}
+      currentIndex={currentIndex}
+      photos={props.photos}
+      updateCurrent={updateCurrent}>
         {props.photos.map((photo, index) => {
           return <Slide photo={photo} key={index}
+          photos={props.photos}
           currentIndex={currentIndex}
+          imgHeight={imgHeight}
+          imgWidth={imgWidth}
           translate={translate}
           transition={transition}
-          width={getWidth()}/>
+          zoomIn={zoomIn}
+          zoomOut={zoomOut}
+          resetZoom={resetZoom}
+          width={getWidth()}
+          updateCurrent={updateCurrent}
+          clickCount={clickCount}/>
         })}
     </ViewerStyles.content>
-    <Controls/>
+    <Controls zoomIn={zoomIn}
+              zoomOut={zoomOut}
+              resetZoom={resetZoom}/>
     <Carousel photos={props.photos}
               currentIndex={currentIndex}
               prevSlide={prevSlide}
