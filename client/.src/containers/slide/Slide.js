@@ -6,9 +6,11 @@ const Slide = (props) => {
   if (props.photo) {
     imageURL = props.photo.srcURL
   }
+  console.log('slide props: ',props);
 
   return (
-    <SlideStyles.content>
+    <SlideStyles.content translate={props.translate}
+    transition={props.transition}>
       <SlideStyles.slide >
       <img src={imageURL} object-fit='cover' max-width='100%' max-height='100%'
       height='519px'

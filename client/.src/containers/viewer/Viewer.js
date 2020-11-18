@@ -1,50 +1,69 @@
 import React, { useState }  from 'react';
 import ViewerStyles from './ViewerStyles.js';
 import Slide from '../slide/Slide.js'
-
-// class Viewer extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       photos: this.props.photos,
-//       translate: 0,
-//       transition: 0.45
-//     }
-//   }
-
-//   getWidth () {
-//     return window.innerWidth;
-//   }
-
-//   render () {
-//     return (
-//       <ViewerStyles.viewer>
-//         {this.props.photos.map((photo, index) => {
-//           return <Slide photo={photo} key={index} translate={this.state.translate}
-//           transition={this.state.transition}
-//           width={this.getWidth.bind(this)}/>
-//         })}
-//       </ViewerStyles.viewer>
-//     );
-//   }
-// }
+import Controls from '../controls/Controls.js'
+import Carousel from '../carousel/Carousel.js'
 
 /**
  * @function Viewer
  */
 const Viewer = (props) => {
 
-  const getWidth = () => window.innerWidth;
+  const getWidth = () => 477.9 / 2;
 
   const [state, setState] = useState({
+    currentIndex: 0,
     translate: 0,
     transition: 0.45
   });
 
-  const { translate, transition } = state;
+  const { translate, transition, currentIndex } = state;
+
+  //functions to handle clicks go here
+  const nextSlide = () => {
+    if (currentIndex === props.photos.length - 1) {
+      return setState({
+        ...state,
+        translate: 0,
+        currentIndex: 0
+      })
+    }
+
+    setState({
+      ...state,
+      currentIndex: currentIndex + 1,
+      translate: (currentIndex + 1) * getWidth()
+    })
+  }
+
+  const prevSlide = () => {
+    if (currentIndex === 0) {
+      return setState({
+        ...state,
+        translate: (props.photos.length - 1) * getWidth(),
+        currentIndex: props.photos.length - 1
+      })
+    }
+
+    setState({
+      ...state,
+      currentIndex: currentIndex - 1,
+      translate: (currentIndex - 1) * getWidth()
+    })
+  }
+
+  const updateCurrent = (index) => {
+    console.log('update current called with: ', index)
+    setState({
+      ...state,
+      currentIndex: index
+    })
+  }
 
 
   console.log('Viewer Props:', props);
+  console.log(state);
+  console.log(currentIndex);
   return (
   <ViewerStyles.viewer>
     <ViewerStyles.content
@@ -53,11 +72,18 @@ const Viewer = (props) => {
       width={getWidth()}>
         {props.photos.map((photo, index) => {
           return <Slide photo={photo} key={index}
+          currentIndex={currentIndex}
           translate={translate}
           transition={transition}
-          width={getWidth() * props.photos.length}/>
+          width={getWidth()}/>
         })}
     </ViewerStyles.content>
+    <Controls/>
+    <Carousel photos={props.photos}
+              currentIndex={currentIndex}
+              prevSlide={prevSlide}
+              nextSlide={nextSlide}
+              updateCurrent={updateCurrent}/>
   </ViewerStyles.viewer>
   )
 }

@@ -9,6 +9,7 @@ const SlideStyles = {
     display: flex;
   `,
   slide: styled.div`
+    cursor: zoom-in;
     height: 50%;
     width: 50%;
     background-size: cover;

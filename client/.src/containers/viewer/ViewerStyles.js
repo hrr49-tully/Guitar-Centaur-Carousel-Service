@@ -9,7 +9,6 @@ const ViewerStyles = {
   margin: 0 auto;
   margin-top: 20px;
   overflow: hidden;
-  border: 5px solid red;
   margin-left: 10px;
   `,
   content: styled.div`
