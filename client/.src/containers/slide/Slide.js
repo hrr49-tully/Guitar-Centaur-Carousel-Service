@@ -6,7 +6,7 @@ const Slide = (props) => {
   if (props.photo) {
     imageURL = props.photos[props.currentIndex].srcURL
   }
-  console.log('slide props  ', props )
+  // console.log('slide props  ', props )
 
   let clickCount = props.clickCount;
 
@@ -14,7 +14,7 @@ const Slide = (props) => {
     clickCount = 0;
     props.resetZoom();
   }
-  console.log('clickCount:' , clickCount)
+  // console.log('clickCount:' , clickCount)
   return (
     <SlideStyles.content translate={props.translate}
     transition='0' >

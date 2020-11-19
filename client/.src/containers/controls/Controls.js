@@ -6,6 +6,8 @@ import ControlsStyles from './ControlsStyles.js';
 const Controls = (props) => {
   console.log('controls props:', props)
 
+  let handler = (props.show) ? props.hideModal : props.showModal;
+
   return (
     <div>
       <ControlsStyles.controls>
@@ -19,9 +21,9 @@ const Controls = (props) => {
           <img src={reset} height='25px' width='25px' onClick={props.resetZoom}/>
         </ControlsStyles.reset>
         <ControlsStyles.expand>
-          <img src={expand} height='22px' width='22px'/>
+          <img src={expand} height='22px' width='22px'
+          onClick={handler}/>
         </ControlsStyles.expand>
-
     </ControlsStyles.controls>
     </div>
 

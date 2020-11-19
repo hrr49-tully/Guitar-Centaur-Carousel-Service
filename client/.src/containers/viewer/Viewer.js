@@ -1,9 +1,10 @@
-import React, { useState }  from 'react';
+import React, { useState, useEffect, useCallback }  from 'react';
 import ViewerStyles from './ViewerStyles.js';
 import Slide from '../slide/Slide.js'
 import Controls from '../controls/Controls.js'
 import Carousel from '../carousel/Carousel.js'
 
+//I'm so sorry - DW
 /**
  * @function Viewer
  */
@@ -17,10 +18,11 @@ const Viewer = (props) => {
     currentIndex: 0,
     translate: 0,
     transition: 0.45,
-    clickCount: 0
+    clickCount: 0,
+    show: false
   });
 
-  const { translate, transition, currentIndex, imgHeight, imgWidth, clickCount } = state;
+  const { translate, transition, currentIndex, imgHeight, imgWidth, clickCount, show } = state;
 
   const nextSlide = () => {
     if (currentIndex === props.photos.length - 1) {
@@ -93,15 +95,30 @@ const Viewer = (props) => {
     })
   }
 
+  const showModal = () => {
+    console.log('show modal clicked!')
+    setState({
+      ...state,
+      show: true
+    })
+  }
+
+  const hideModal = () => {
+    console.log('closed the modal!')
+    setState({
+      ...state,
+      show: false
+    })
+  }
+
+
 
   console.log('Viewer Props:', props);
   console.log('Viewer state:',state);
   return (
+    <div>
   <ViewerStyles.viewer>
     <ViewerStyles.content
-      translate={translate}
-      transition={transition}
-      width={getWidth()}
       currentIndex={currentIndex}
       photos={props.photos}
       updateCurrent={updateCurrent}>
@@ -111,8 +128,6 @@ const Viewer = (props) => {
           currentIndex={currentIndex}
           imgHeight={imgHeight}
           imgWidth={imgWidth}
-          translate={translate}
-          transition={transition}
           zoomIn={zoomIn}
           zoomOut={zoomOut}
           resetZoom={resetZoom}
@@ -123,15 +138,105 @@ const Viewer = (props) => {
     </ViewerStyles.content>
     <Controls zoomIn={zoomIn}
               zoomOut={zoomOut}
-              resetZoom={resetZoom}/>
+              resetZoom={resetZoom}
+              showModal={showModal}
+              hideModal={hideModal}/>
     <Carousel photos={props.photos}
               currentIndex={currentIndex}
               prevSlide={prevSlide}
               nextSlide={nextSlide}
-              updateCurrent={updateCurrent}/>
+              updateCurrent={updateCurrent}
+              show={show}/>
   </ViewerStyles.viewer>
+  <Modal  show={show}
+          showModal={showModal}
+          hideModal={hideModal}
+          props={state}
+          prevSlide={prevSlide}
+          nextSlide={nextSlide}
+          updateCurrent={updateCurrent}
+          zoomIn={zoomIn}
+          zoomOut={zoomOut}
+          resetZoom={resetZoom}
+          photos={props.photos}
+          width={getWidth()}
+              ></Modal>
+  </div>
   )
 }
+
+const Modal = (props) => {
+
+  console.log('modal props: ', props)
+
+  const escape = useCallback((event) => {
+    if(event.keyCode === 27) {
+      props.hideModal();
+    }
+  }, []);
+
+  useEffect(() => {
+    document.addEventListener("keydown", escape, false);
+
+    return () => {
+      document.removeEventListener("keydown", escape, false);
+    };
+  }, []);
+
+  if (props.show === true) {
+    return (
+      <div>
+      <ViewerStyles.modalShown>
+      <ViewerStyles.modalControls>
+    <Controls zoomIn={props.zoomIn}
+              zoomOut={props.zoomOut}
+              resetZoom={props.resetZoom}
+              hideModal={props.hideModal}
+              showModal={props.showModal}
+              show={props.show}/>
+    </ViewerStyles.modalControls>
+    <ViewerStyles.modalCarousel>
+    <Carousel photos={props.photos}
+              currentIndex={props.props.currentIndex}
+              prevSlide={props.prevSlide}
+              nextSlide={props.nextSlide}
+              updateCurrent={props.updateCurrent}
+              show={props.show}/>
+    </ViewerStyles.modalCarousel>
+      <ViewerStyles.modalViewer>
+      <ViewerStyles.modalContent
+      currentIndex={props.props.currentIndex}
+      photos={props.photos}
+      updateCurrent={props.updateCurrent}>
+        {props.photos.map((photo, index) => {
+          return <Slide photo={photo} key={index}
+          photos={props.photos}
+          currentIndex={props.props.currentIndex}
+          imgHeight={props.props.imgHeight}
+          imgWidth={props.props.imgWidth}
+          zoomIn={props.zoomIn}
+          zoomOut={props.zoomOut}
+          resetZoom={props.resetZoom}
+          height="519"
+          width="477.9"
+          updateCurrent={props.updateCurrent}
+          clickCount={props.props.clickCount}/>
+        })}
+    </ViewerStyles.modalContent>
+    </ViewerStyles.modalViewer>
+        </ViewerStyles.modalShown>
+      </div>
+    );
+  } else {
+    return (
+      <div>
+      <ViewerStyles.modalHidden >
+        </ViewerStyles.modalHidden>
+      </div>
+    );
+  }
+
+};
 
 
 

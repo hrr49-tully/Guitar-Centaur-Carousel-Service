@@ -4,7 +4,7 @@ const CarouselStyles = {
   container: styled.div`
   transform: translateX(-${props => props.translate}px);
   transition: transform ease-out ${props => props.transition}s;
-  width: 284px;
+  width: 350px;
   height: 80px;
   position: absolute;
   display: block;
@@ -24,7 +24,7 @@ const CarouselStyles = {
   `,
   rightArrow: styled.img`
     position: absolute;
-    left: 250px;
+    left: 340px;
     top: 29px;
     width: 22px;
     height: 22px;
@@ -35,7 +35,7 @@ const CarouselStyles = {
   images: styled.div`
     transform: translateX(-${props => props.translate}px);
     transition: transform ease-out ${props => props.transition}s;
-    width: 204px;
+    width: 300px;
     height: 80px;
     position: relative;
     overflow: hidden;
