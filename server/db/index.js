@@ -8,8 +8,8 @@ const url   = `http://${host}:${port}`;
 
 var db = mysql.createConnection({
     host: host,
-    user: 'root',
-    password: '',
+    user: 'student',
+    password: 'password',
     database: 'centaur'
   });
 
