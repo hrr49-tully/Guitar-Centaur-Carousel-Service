@@ -24,6 +24,9 @@ const ControlsStyles = {
     background-size: auto;
     cursor: pointer;
     padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     :hover {
       background-color: #bfbebe;
     }
@@ -41,6 +44,9 @@ const ControlsStyles = {
     background-size: auto;
     cursor: pointer;
     padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   `,
   reset: styled.div`
     top: 42px;
@@ -54,6 +60,9 @@ const ControlsStyles = {
     background-size: auto;
     cursor: pointer;
     padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   `,
   expand: styled.div`
     top: 42px;
@@ -67,6 +76,9 @@ const ControlsStyles = {
     background-size: auto;
     cursor: pointer;
     padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     :hover {
       background-color: #bfbebe;
     }

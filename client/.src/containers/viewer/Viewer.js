@@ -4,10 +4,6 @@ import Slide from '../slide/Slide.js'
 import Controls from '../controls/Controls.js'
 import Carousel from '../carousel/Carousel.js'
 
-//I'm so sorry - DW
-/**
- * @function Viewer
- */
 const Viewer = (props) => {
 
   const getWidth = () => 477.9 / 2;
@@ -167,8 +163,6 @@ const Viewer = (props) => {
 
 const Modal = (props) => {
 
-  console.log('modal props: ', props)
-
   const escape = useCallback((event) => {
     if(event.keyCode === 27) {
       props.hideModal();
@@ -217,8 +211,6 @@ const Modal = (props) => {
           zoomIn={props.zoomIn}
           zoomOut={props.zoomOut}
           resetZoom={props.resetZoom}
-          height="519"
-          width="477.9"
           updateCurrent={props.updateCurrent}
           clickCount={props.props.clickCount}/>
         })}

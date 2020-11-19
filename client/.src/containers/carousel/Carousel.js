@@ -3,9 +3,6 @@ import {back, next} from '../../../assets/images';
 import CarouselStyles from './CarouselStyles.js';
 
 const Carousel = (props) => {
-  // console.log('carousel props:', props)
-
-  const getWidth = () => 70;
 
   const [state, setState] = useState({
     currentIndex: props.currentIndex,
@@ -15,15 +12,11 @@ const Carousel = (props) => {
 
   const { translate, transition, currentIndex } = state;
 
-  const handleClick = () => {
-
-  }
-
   const nextImage = () => {
     if (currentIndex === props.photos.length - 1) {
       return setState({
         ...state,
-        translate: 0,
+        translate: -70,
         currentIndex: 0
       })
     }
@@ -31,7 +24,7 @@ const Carousel = (props) => {
     setState({
       ...state,
       currentIndex: currentIndex + 1,
-      translate: (currentIndex + 1) * getWidth()
+      translate: (currentIndex + 1) * 70
     })
   }
 
@@ -39,7 +32,7 @@ const Carousel = (props) => {
     if (currentIndex === 0) {
       return setState({
         ...state,
-        translate: (props.photos.length - 1) * getWidth(),
+        translate: (props.photos.length - 1) * 70,
         currentIndex: props.photos.length - 1
       })
     }
@@ -47,24 +40,21 @@ const Carousel = (props) => {
     setState({
       ...state,
       currentIndex: currentIndex - 1,
-      translate: (currentIndex - 1) * getWidth()
+      translate: (currentIndex - 1) * 70
     })
   }
 
-
-  // console.log('carousel State: ',state);
-  // console.log('carousel props: ',props);
   return (
     <div>
       <CarouselStyles.container>
         <CarouselStyles.images>
         {props.photos.map((photo, index) => {
           return <CarouselStyles.image
+            className={(index === currentIndex) ? 'current' : ''}
             src={photo.srcURL}
             key={index}
             translate={translate}
             transition={transition}
-            width={getWidth() * props.photos.length}
             onClick={(key) => {
               console.log('image clicked')
               props.updateCurrent(index);
@@ -72,13 +62,13 @@ const Carousel = (props) => {
             </CarouselStyles.image>
         })}
         </CarouselStyles.images>
-        <CarouselStyles.leftArrow src={back} onClick={() => {
+        <CarouselStyles.leftArrow src={back} title='Scroll Left' onClick={() => {
           props.prevSlide()
           prevImage()
         }
           } >
         </CarouselStyles.leftArrow>
-        <CarouselStyles.rightArrow src={next} onClick={ () => {
+        <CarouselStyles.rightArrow src={next} title='Scroll Right' onClick={ () => {
           props.nextSlide()
           nextImage()
         } } ></CarouselStyles.rightArrow>

@@ -4,6 +4,7 @@ import TitleStyles from './TitleStyles.js';
 import {star, noStar} from '../../../assets/images';
 
 const Title = (props) => {
+  console.log('title props:', props)
   let stars = [];
   for (let i = 0; i < 5; i++) {
     if (i < props.item.avgScore) {

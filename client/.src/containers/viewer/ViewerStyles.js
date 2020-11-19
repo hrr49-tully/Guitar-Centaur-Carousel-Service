@@ -51,6 +51,7 @@ const ViewerStyles = {
     overflow: hidden;
     margin-left: 10px;
     margin: 0 auto;
+    background-color: red;
   `,
   modalViewer: styled.div`
     display: flex;
@@ -58,6 +59,7 @@ const ViewerStyles = {
     height: 519px;
     width: 477.9px;
     overflow: hidden;
+    margin: 0 auto;
   `,
   modalControls: styled.div`
     display: flex;
@@ -67,7 +69,8 @@ const ViewerStyles = {
     float: left;
   `,
   modalCarousel: styled.div`
-    left: 30%;
+    display: flex;
+    margin: 0 auto;
     position: absolute;
     bottom: 0px;
     width: 500px;
