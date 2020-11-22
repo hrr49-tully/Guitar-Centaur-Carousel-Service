@@ -9,132 +9,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./client/assets/images/back.png":
-/*!***************************************!*\
-  !*** ./client/assets/images/back.png ***!
-  \***************************************/
-/*! default exports */
-/*! exports [not provided] [no usage info] */
-/*! runtime requirements: module, __webpack_require__.p, __webpack_require__.* */
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"c608b5cfcaa1bb1cb8c2.png\";\n\n//# sourceURL=webpack://guitar-centaur-carousel-service/./client/assets/images/back.png?");
-
-/***/ }),
-
-/***/ "./client/assets/images/expand.png":
-/*!*****************************************!*\
-  !*** ./client/assets/images/expand.png ***!
-  \*****************************************/
-/*! default exports */
-/*! exports [not provided] [no usage info] */
-/*! runtime requirements: module, __webpack_require__.p, __webpack_require__.* */
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"922db7dc2ccb12b669d9.png\";\n\n//# sourceURL=webpack://guitar-centaur-carousel-service/./client/assets/images/expand.png?");
-
-/***/ }),
-
-/***/ "./client/assets/images/minimize.png":
-/*!*******************************************!*\
-  !*** ./client/assets/images/minimize.png ***!
-  \*******************************************/
-/*! default exports */
-/*! exports [not provided] [no usage info] */
-/*! runtime requirements: module, __webpack_require__.p, __webpack_require__.* */
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"7bdaf0ada68f65be9b2a.png\";\n\n//# sourceURL=webpack://guitar-centaur-carousel-service/./client/assets/images/minimize.png?");
-
-/***/ }),
-
-/***/ "./client/assets/images/minus.png":
-/*!****************************************!*\
-  !*** ./client/assets/images/minus.png ***!
-  \****************************************/
-/*! default exports */
-/*! exports [not provided] [no usage info] */
-/*! runtime requirements: module, __webpack_require__.p, __webpack_require__.* */
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"a410070321d483d58e7b.png\";\n\n//# sourceURL=webpack://guitar-centaur-carousel-service/./client/assets/images/minus.png?");
-
-/***/ }),
-
-/***/ "./client/assets/images/next.png":
-/*!***************************************!*\
-  !*** ./client/assets/images/next.png ***!
-  \***************************************/
-/*! default exports */
-/*! exports [not provided] [no usage info] */
-/*! runtime requirements: module, __webpack_require__.p, __webpack_require__.* */
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"86812d32aaf1e50541a1.png\";\n\n//# sourceURL=webpack://guitar-centaur-carousel-service/./client/assets/images/next.png?");
-
-/***/ }),
-
-/***/ "./client/assets/images/noStar.png":
-/*!*****************************************!*\
-  !*** ./client/assets/images/noStar.png ***!
-  \*****************************************/
-/*! default exports */
-/*! exports [not provided] [no usage info] */
-/*! runtime requirements: module, __webpack_require__.p, __webpack_require__.* */
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"0d50dc791c6e0c5eed6a.png\";\n\n//# sourceURL=webpack://guitar-centaur-carousel-service/./client/assets/images/noStar.png?");
-
-/***/ }),
-
-/***/ "./client/assets/images/plus.png":
-/*!***************************************!*\
-  !*** ./client/assets/images/plus.png ***!
-  \***************************************/
-/*! default exports */
-/*! exports [not provided] [no usage info] */
-/*! runtime requirements: module, __webpack_require__.p, __webpack_require__.* */
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"644edabf8f45a115dbc4.png\";\n\n//# sourceURL=webpack://guitar-centaur-carousel-service/./client/assets/images/plus.png?");
-
-/***/ }),
-
-/***/ "./client/assets/images/refresh.png":
-/*!******************************************!*\
-  !*** ./client/assets/images/refresh.png ***!
-  \******************************************/
-/*! default exports */
-/*! exports [not provided] [no usage info] */
-/*! runtime requirements: module, __webpack_require__.p, __webpack_require__.* */
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"f50cf98f46ae5f24f7df.png\";\n\n//# sourceURL=webpack://guitar-centaur-carousel-service/./client/assets/images/refresh.png?");
-
-/***/ }),
-
-/***/ "./client/assets/images/star.png":
-/*!***************************************!*\
-  !*** ./client/assets/images/star.png ***!
-  \***************************************/
-/*! default exports */
-/*! exports [not provided] [no usage info] */
-/*! runtime requirements: module, __webpack_require__.p, __webpack_require__.* */
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"618d11e122cbca3f8e9e.png\";\n\n//# sourceURL=webpack://guitar-centaur-carousel-service/./client/assets/images/star.png?");
-
-/***/ }),
-
 /***/ "./node_modules/@emotion/is-prop-valid/dist/is-prop-valid.browser.esm.js":
 /*!*******************************************************************************!*\
   !*** ./node_modules/@emotion/is-prop-valid/dist/is-prop-valid.browser.esm.js ***!
@@ -570,7 +444,7 @@ eval("\n\nvar bind = __webpack_require__(/*! ./helpers/bind */ \"./node_modules/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var _AppStyles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AppStyles */ \"./client/.src/containers/app/AppStyles.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _title_Title_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../title/Title.js */ \"./client/.src/containers/title/Title.js\");\n/* harmony import */ var _viewer_Viewer_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../viewer/Viewer.js */ \"./client/.src/containers/viewer/Viewer.js\");\nfunction _typeof(obj) { \"@babel/helpers - typeof\"; if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nfunction _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _isNativeReflectConstruct() { if (typeof Reflect === \"undefined\" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === \"function\") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\n\n\n\n\n\n\n\nvar App = /*#__PURE__*/function (_React$Component) {\n  _inherits(App, _React$Component);\n\n  var _super = _createSuper(App);\n\n  function App(props) {\n    var _this;\n\n    _classCallCheck(this, App);\n\n    _this = _super.call(this, props);\n    _this.state = {\n      item: {},\n      photos: []\n    };\n    _this.getItem = _this.getItem.bind(_assertThisInitialized(_this));\n    _this.getPhotosByItemID = _this.getPhotosByItemID.bind(_assertThisInitialized(_this));\n    return _this;\n  }\n\n  _createClass(App, [{\n    key: \"getItem\",\n    value: function getItem() {\n      var _this2 = this;\n\n      var options = {\n        method: 'get',\n        url: 'http://localhost:3000/items'\n      };\n      axios__WEBPACK_IMPORTED_MODULE_3___default()(options).then(function (response) {\n        var item = response.data[Math.floor(Math.random() * response.data.length)];\n\n        _this2.setState({\n          item: item\n        });\n\n        _this2.getPhotosByItemID();\n      });\n    }\n  }, {\n    key: \"getPhotosByItemID\",\n    value: function getPhotosByItemID() {\n      var _this3 = this;\n\n      var itemID = this.state.item.id;\n      var options = {\n        method: 'post',\n        url: 'http://localhost:3000/photos',\n        data: {\n          itemID: itemID\n        }\n      };\n      axios__WEBPACK_IMPORTED_MODULE_3___default()(options).then(function (response) {\n        _this3.setState({\n          photos: response.data\n        });\n      });\n    }\n  }, {\n    key: \"componentDidMount\",\n    value: function componentDidMount() {\n      this.getItem();\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      // console.log('toplevel state: ',this.state);\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_AppStyles__WEBPACK_IMPORTED_MODULE_2__.default.app, null, \"Welcome to Guitar Centaur\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_title_Title_js__WEBPACK_IMPORTED_MODULE_4__.default, {\n        item: this.state.item\n      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_viewer_Viewer_js__WEBPACK_IMPORTED_MODULE_5__.default, {\n        photos: this.state.photos\n      })));\n    }\n  }]);\n\n  return App;\n}(react__WEBPACK_IMPORTED_MODULE_0__.Component);\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);\n\n//# sourceURL=webpack://guitar-centaur-carousel-service/./client/.src/containers/app/App.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var _AppStyles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AppStyles */ \"./client/.src/containers/app/AppStyles.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _title_Title_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../title/Title.js */ \"./client/.src/containers/title/Title.js\");\n/* harmony import */ var _viewer_Viewer_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../viewer/Viewer.js */ \"./client/.src/containers/viewer/Viewer.js\");\nfunction _typeof(obj) { \"@babel/helpers - typeof\"; if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nfunction _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _isNativeReflectConstruct() { if (typeof Reflect === \"undefined\" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === \"function\") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\n\n\n\n\n\n\n\nvar App = /*#__PURE__*/function (_React$Component) {\n  _inherits(App, _React$Component);\n\n  var _super = _createSuper(App);\n\n  function App(props) {\n    var _this;\n\n    _classCallCheck(this, App);\n\n    _this = _super.call(this, props);\n    _this.state = {\n      item: {},\n      photos: []\n    };\n    _this.getItem = _this.getItem.bind(_assertThisInitialized(_this));\n    _this.getPhotosByItemID = _this.getPhotosByItemID.bind(_assertThisInitialized(_this));\n    return _this;\n  }\n\n  _createClass(App, [{\n    key: \"getItem\",\n    value: function getItem() {\n      var _this2 = this;\n\n      var options = {\n        method: 'get',\n        url: '/api/items'\n      };\n      axios__WEBPACK_IMPORTED_MODULE_3___default()(options).then(function (response) {\n        var item = response.data[Math.floor(Math.random() * response.data.length)];\n\n        _this2.setState({\n          item: item\n        });\n\n        _this2.getPhotosByItemID();\n      });\n    }\n  }, {\n    key: \"getPhotosByItemID\",\n    value: function getPhotosByItemID() {\n      var _this3 = this;\n\n      var itemID = this.state.item.id;\n      var options = {\n        method: 'post',\n        url: '/api/photos',\n        data: {\n          itemID: itemID\n        }\n      };\n      axios__WEBPACK_IMPORTED_MODULE_3___default()(options).then(function (response) {\n        _this3.setState({\n          photos: response.data\n        });\n      });\n    }\n  }, {\n    key: \"componentDidMount\",\n    value: function componentDidMount() {\n      this.getItem();\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      // console.log('toplevel state: ',this.state);\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_AppStyles__WEBPACK_IMPORTED_MODULE_2__.default.app, null, \"Welcome to Guitar Centaur\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_title_Title_js__WEBPACK_IMPORTED_MODULE_4__.default, {\n        item: this.state.item\n      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_viewer_Viewer_js__WEBPACK_IMPORTED_MODULE_5__.default, {\n        photos: this.state.photos\n      })));\n    }\n  }]);\n\n  return App;\n}(react__WEBPACK_IMPORTED_MODULE_0__.Component);\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);\n\n//# sourceURL=webpack://guitar-centaur-carousel-service/./client/.src/containers/app/App.js?");
 
 /***/ }),
 
@@ -768,11 +642,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /*! export reset [provided] [no usage info] [missing usage info prevents renaming] */
 /*! export star [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__, __webpack_require__.d, __webpack_require__.* */
+/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"noStar\": () => /* binding */ noStar,\n/* harmony export */   \"star\": () => /* binding */ star,\n/* harmony export */   \"plus\": () => /* binding */ plus,\n/* harmony export */   \"minus\": () => /* binding */ minus,\n/* harmony export */   \"reset\": () => /* binding */ reset,\n/* harmony export */   \"expand\": () => /* binding */ expand,\n/* harmony export */   \"minimize\": () => /* binding */ minimize,\n/* harmony export */   \"back\": () => /* binding */ back,\n/* harmony export */   \"next\": () => /* binding */ next\n/* harmony export */ });\n//review stars\nvar noStar = __webpack_require__(/*! ./noStar.png */ \"./client/assets/images/noStar.png\");\nvar star = __webpack_require__(/*! ./star.png */ \"./client/assets/images/star.png\"); //Controls\n\nvar plus = __webpack_require__(/*! ./plus.png */ \"./client/assets/images/plus.png\");\nvar minus = __webpack_require__(/*! ./minus.png */ \"./client/assets/images/minus.png\");\nvar reset = __webpack_require__(/*! ./refresh.png */ \"./client/assets/images/refresh.png\");\nvar expand = __webpack_require__(/*! ./expand.png */ \"./client/assets/images/expand.png\");\nvar minimize = __webpack_require__(/*! ./minimize.png */ \"./client/assets/images/minimize.png\"); //Carousel Navigation\n\nvar back = __webpack_require__(/*! ./back.png */ \"./client/assets/images/back.png\");\nvar next = __webpack_require__(/*! ./next.png */ \"./client/assets/images/next.png\");\n\n//# sourceURL=webpack://guitar-centaur-carousel-service/./client/assets/images/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"noStar\": () => /* binding */ noStar,\n/* harmony export */   \"star\": () => /* binding */ star,\n/* harmony export */   \"plus\": () => /* binding */ plus,\n/* harmony export */   \"minus\": () => /* binding */ minus,\n/* harmony export */   \"reset\": () => /* binding */ reset,\n/* harmony export */   \"expand\": () => /* binding */ expand,\n/* harmony export */   \"minimize\": () => /* binding */ minimize,\n/* harmony export */   \"back\": () => /* binding */ back,\n/* harmony export */   \"next\": () => /* binding */ next\n/* harmony export */ });\n//review stars\nvar noStar = 'https://gc-photocarousel.s3-us-west-2.amazonaws.com/noStar.png';\nvar star = 'https://gc-photocarousel.s3-us-west-2.amazonaws.com/star.png'; //Controls\n\nvar plus = 'https://gc-photocarousel.s3-us-west-2.amazonaws.com/plus.png';\nvar minus = 'https://gc-photocarousel.s3-us-west-2.amazonaws.com/minus.png';\nvar reset = 'https://gc-photocarousel.s3-us-west-2.amazonaws.com/refresh.png';\nvar expand = 'https://gc-photocarousel.s3-us-west-2.amazonaws.com/expand.png';\nvar minimize = 'https://gc-photocarousel.s3-us-west-2.amazonaws.com/minimize.png'; //Carousel Navigation\n\nvar back = 'https://gc-photocarousel.s3-us-west-2.amazonaws.com/back.png';\nvar next = 'https://gc-photocarousel.s3-us-west-2.amazonaws.com/next.png';\n\n//# sourceURL=webpack://guitar-centaur-carousel-service/./client/assets/images/index.js?");
 
 /***/ }),
 
@@ -1268,7 +1142,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => "7fa9e5f05805fb3810ca"
+/******/ 		__webpack_require__.h = () => "4557045e3aabade0b7b9"
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
