@@ -46,8 +46,6 @@ module.exports = {
       title: 'Guitar Centaur',
       template: path.resolve(__dirname, './client/.src/index.html'),
       filename: 'index.html'
-    }),
-    new CleanWebpackPlugin(),
-    new webpack.HotModuleReplacementPlugin()
+    })
   ]
 }

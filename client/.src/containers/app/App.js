@@ -19,7 +19,7 @@ class App extends React.Component {
   getItem () {
     let options = {
       method: 'get',
-      url: 'http://localhost:3000/items'
+      url: '/api/items'
     }
 
     axios(options)
@@ -38,7 +38,7 @@ class App extends React.Component {
 
     let options = {
       method: 'post',
-      url: 'http://localhost:3000/photos',
+      url: '/api/photos',
       data: {itemID}
     }
     axios(options)
