@@ -4,7 +4,6 @@ import ControlsStyles from './ControlsStyles.js';
 
 
 const Controls = (props) => {
-  console.log('controls props:', props)
 
   let handler = (props.show) ? props.hideModal : props.showModal;
 

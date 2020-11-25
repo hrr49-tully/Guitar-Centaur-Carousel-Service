@@ -9,15 +9,12 @@ const Slide = (props) => {
   const { backgroundPosition } = state;
 
   const handleZoom = (event) => {
-    console.log('attempting to handle zoom')
     const { left, top, width, height } = event.target.getBoundingClientRect()
     const x = (event.pageX - left) / width * 100
     const y = (event.pageY - top) / height * 100
     setState({ backgroundPosition: `${x}% ${y}%` })
   }
   // let urlForBG = `url(${props.photo.srcURL})`
-
-  console.log(props)
 
   let imageURL;
   if (props.photo) {
@@ -29,8 +26,7 @@ const Slide = (props) => {
     clickCount = 0;
     props.resetZoom();
   }
-  // console.log('clickCount:' , clickCount)
-  console.log(state);
+
   return (
     <SlideStyles.content translate={props.translate}
     transition='0' >
