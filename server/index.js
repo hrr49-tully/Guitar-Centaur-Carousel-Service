@@ -4,10 +4,12 @@ const port = 3000;
 const db = require('./db/index.js');
 const model = require('./db/model.js');
 const bodyParser = require('body-parser');
+var compression = require('compression')
 const cors = require('cors');
 
 app.use(cors());
 app.use(bodyParser.json());
+app.use(compression());
 
 // app.use(express.static('../public'));
 app.use(express.static(__dirname + '/../public'));
