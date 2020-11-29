@@ -51,7 +51,6 @@ const ViewerStyles = {
     overflow: hidden;
     margin-left: 10px;
     margin: 0 auto;
-    background-color: red;
   `,
   modalViewer: styled.div`
     display: flex;

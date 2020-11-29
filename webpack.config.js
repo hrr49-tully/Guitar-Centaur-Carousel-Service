@@ -32,7 +32,7 @@ module.exports = {
       }
     ]
   },
-  mode: 'development',
+  mode: 'production',
   devServer: {
     historyApiFallback: true,
     contentBase: path.resolve(__dirname, './public'),

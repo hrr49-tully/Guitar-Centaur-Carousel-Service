@@ -107,10 +107,6 @@ const Viewer = (props) => {
     })
   }
 
-
-
-  console.log('Viewer Props:', props);
-  console.log('Viewer state:',state);
   return (
     <div>
   <ViewerStyles.viewer>

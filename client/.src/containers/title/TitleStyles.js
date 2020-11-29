@@ -53,6 +53,7 @@ const TitleStyles = {
     align-items: center;
     .starWrapper{
       margin-right: 10px;
+      display: flex;
     }
     .images{
       height: 14px;
