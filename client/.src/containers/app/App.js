@@ -43,18 +43,6 @@ class App extends React.Component {
 
   }
 
-  // componentDidMount() {
-  //   let item_id = window.location.pathname;
-  //   // Remove the first forward slash
-  //   item_id = item_id.split('');
-  //   item_id.shift();
-  //   item_id = item_id.join('');
-
-  //   if (item_id >= 0) {
-  //         // do something with item_id, like setstate
-  //   }
-  // }
-
   getPhotosByItemID () {
     let itemID = this.state.item.id;
 
@@ -77,7 +65,6 @@ class App extends React.Component {
 
 
   render () {
-    // console.log('toplevel state: ',this.state);
     return (
       <div>
       <div>
