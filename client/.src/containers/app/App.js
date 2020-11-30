@@ -24,7 +24,17 @@ class App extends React.Component {
 
     axios(options)
       .then((response) => {
-        let item = response.data[Math.floor(Math.random() * response.data.length)];
+        let item =  response.data[Math.floor(Math.random() * response.data.length)];
+
+        let id = window.location.pathname;
+        if (id.length > 1) {
+          id = id.split('');
+          id.shift();
+          id = Number.parseInt(id.join(''));
+          item = response.data[id]
+        }
+
+        console.log(item);
         this.setState({
           item
         });
@@ -55,7 +65,6 @@ class App extends React.Component {
 
 
   render () {
-    // console.log('toplevel state: ',this.state);
     return (
       <div>
       <div>

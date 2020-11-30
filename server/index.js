@@ -4,6 +4,7 @@ const port = 3000;
 const db = require('./db/index.js');
 const model = require('./db/model.js');
 const bodyParser = require('body-parser');
+const path = require('path');
 var compression = require('compression')
 const cors = require('cors');
 
@@ -13,6 +14,10 @@ app.use(compression());
 
 // app.use(express.static('../public'));
 app.use(express.static(__dirname + '/../public'));
+
+app.get('/:item_id', (req, res) => {
+  res.sendFile(`${path.resolve(__dirname, '../', 'public')}/index.html`);
+});
 
 app.get('/api/items', async (req, res) => {
   let items = await model.getAllItems()
