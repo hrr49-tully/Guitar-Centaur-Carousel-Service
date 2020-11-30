@@ -24,7 +24,17 @@ class App extends React.Component {
 
     axios(options)
       .then((response) => {
-        let item = response.data[Math.floor(Math.random() * response.data.length)];
+        let item =  response.data[Math.floor(Math.random() * response.data.length)];
+
+        let id = window.location.pathname;
+        if (id.length > 1) {
+          id = id.split('');
+          id.shift();
+          id = Number.parseInt(id.join(''));
+          item = response.data[id]
+        }
+
+        console.log(item);
         this.setState({
           item
         });
@@ -32,6 +42,18 @@ class App extends React.Component {
       })
 
   }
+
+  // componentDidMount() {
+  //   let item_id = window.location.pathname;
+  //   // Remove the first forward slash
+  //   item_id = item_id.split('');
+  //   item_id.shift();
+  //   item_id = item_id.join('');
+
+  //   if (item_id >= 0) {
+  //         // do something with item_id, like setstate
+  //   }
+  // }
 
   getPhotosByItemID () {
     let itemID = this.state.item.id;
