@@ -20,12 +20,18 @@ Title card plus photo viewer/carousel modules for Guitar Centaur shopping UI, ba
 1. [Development](#development)
 
 ## Usage
-   Seed sample data, after instantiating schema: "seeder": "node faker/seeder.js",
-   Development Server "server": "nodemon server/index.js",
-   Production with PM2: "production": "pm2 start server/index.js",
-   Development Client: "client": "npx webpack serve",
-   Build Bundle: "build": "webpack",
-   Server Test Suite: "testServer": "mocha ./spec/serverSpec.js; RES=$?; kill %1; exit $RES",
+   Seed sample data, after instantiating schema: "seeder": "node faker/seeder.js"
+   
+   Development Server "server": "nodemon server/index.js"
+   
+   Production with PM2: "production": "pm2 start server/index.js"
+   
+   Development Client: "client": "npx webpack serve"
+   
+   Build Bundle: "build": "webpack"
+   
+   Server Test Suite: "testServer": "mocha ./spec/serverSpec.js; RES=$?; kill %1; exit $RES"
+   
    Client Test Suite: "testClient": "jest"
 
 
