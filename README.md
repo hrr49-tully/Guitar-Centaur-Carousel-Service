@@ -1,6 +1,4 @@
-# Project Name
-
-> Guitar-Centaur-Carousel-Service (Standalone Component Version)
+# Guitar-Centaur-Carousel-Service 
 
 ## Related Projects
 
@@ -21,7 +19,7 @@
 
 ## Usage
 
-> This is a standalone version of the title card plus photo viewer/carousel component from Guitar Center's UI.
+> Title card plus photo viewer/carousel modules for Guitar Centaur shopping UI.
 
 ## Requirements
 
